@@ -1,14 +1,6 @@
 #include<stdio.h>
 
-int smallestOfArray(int arr[]){
-     int smallest = arr[0];
-    for(int i=0;i<5;i++){
-        if(arr[i] <= smallest){
-            smallest = arr[i];
-        }
-    }
-    return smallest;
-}
+
 int main()
 {
     int marks[5] = {40,35,120,16,20};
