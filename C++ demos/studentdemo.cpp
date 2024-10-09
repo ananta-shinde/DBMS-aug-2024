@@ -2,29 +2,39 @@
 using namespace std;
 
 class Student{
+     int rollNo;
+     string name;
 
-    string name ;
-    float marks ;
-
-    public:
-    void acceptData(){
-        cout<<"enter your name:";
+     public:
+     void getData(){
+        cout << "enter your name";
         cin >> name;
-        cout << "enter your marks";
-        cin >> marks;
-    }
+        cout << "Enter roll No :";
+        cin >> rollNo;
+     }
 
-    void display(){
-        cout << "Name:"<< name << "Marks :" << marks;
-    }
+     void display(){
+        cout << "Name: "<< name;
+        cout << "Roll no :" << rollNo;
+     }
+
 };
+
+class Teacher{ 
+     int salary;
+     string name;
+};
+
+
 
 int main()
 {
-    Student s1,s2;
-    // s1.acceptData();
+    Student s1;
+    Teacher t1;
+    
+    s1.getData();
     s1.display();
-    s2.acceptData();
-    s2.display();
+  
     return 0;
 }
+
